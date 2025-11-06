@@ -34,7 +34,7 @@
 
   &__link.is-active {
     position: relative;
-    color: var(--moyo-blue);
+    color: $--button-buy;
     &::after {
       content: '';
       z-index: 1;
@@ -44,7 +44,7 @@
       transform: translateX(-50%);
       height: 4px;
       width: 100%;
-      background: var(--moyo-blue);
+      background: $--button-buy;
       border-radius: 16px;
     }
   }
