@@ -1,29 +1,25 @@
-html {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 0%;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, sans-serif;
-  box-sizing: border-box;
-}
-
 .card {
   width: $--card-width;
   height: $--card-height;
-  border: 1px solid rgba(243, 243, 243, 1);
+  border: 1px solid $--border-color;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
   box-sizing: border-box;
   transition: 300ms ease;
+  &__name {
+    color: $--color-main-text;
+    margin: 40px 16px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    width: 100%;
+  }
   &:hover {
     transform: scale(1.2);
   }
   &:hover &__name {
-    color: #34568b;
+    color: $card-hover-color;
   }
 
   &__image {
@@ -37,16 +33,6 @@ body {
     padding-top: 32px;
     padding-left: 19px;
     padding-right: 19px;
-  }
-
-  &__name {
-    color: $--color-main-text;
-    margin: 40px 16px 0;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0%;
-    width: 100%;
   }
 
   &__code {
@@ -118,9 +104,9 @@ body {
     color: rgba(255, 255, 255, 1);
     margin-top: 16px;
     margin-bottom: 16px;
+    transition: 300ms;
 
     &:hover {
-      transition: 300ms;
       border: 1px solid $--button-buy;
       background-color: rgba(255, 255, 255, 1);
       color: $--button-buy;

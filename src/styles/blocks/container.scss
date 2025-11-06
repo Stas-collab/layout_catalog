@@ -1,12 +1,12 @@
 .container {
-  --column-count: 1 height: 100vh;
+  --column-count: 1;
 
   padding: 50px 40px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(var(--column-count), 200px);
   justify-content: center;
-  gap: 43px 48px;
+  gap: 48px 46px;
 }
 
 @media (min-width: 488px) {
